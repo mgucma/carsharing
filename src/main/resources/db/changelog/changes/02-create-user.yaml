@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 02-create-user
+      author: mg
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: email
+                  value: customer@simpleart.eu
+              - column:
+                  name: first_name
+                  value: password
+              - column:
+                  name: last_name
+                  value: password
+              - column:
+                  name: password
+                  value: $2b$12$8/QvqDnMwqK4g9XkzZe0veDReQkJyyAZ/6heLNeyKHB0UjVvtwqT6
+              - column:
+                  name: role
+                  value: CUSTOMER
